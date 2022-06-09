@@ -32,8 +32,3 @@ stages:
       displayName: Tag for private registry
         docker tag backend:$(tag) docker.io/songlongtj/backend:$(tag)
         docker ps
-    - task: Docker@2
-      inputs:
-        repository: 'songlongtj/backend'
-        command: 'push'
-        tags: '$(tag)'
