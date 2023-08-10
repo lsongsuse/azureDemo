@@ -32,3 +32,13 @@ stages:
       displayName: Tag for private registry
         docker tag backend:$(tag) docker.io/songlongtj/backend:$(tag)
         docker ps
+    - task: NeuVectorScan@3
+      inputs:
+        scanType: 'standalone'
+        nvContainerRegistry: 'lsong docker hub'
+        nvRepository: 'songlongtj/scanner'
+        nvTag: 'sig'
+        containerRegistry: 'lsong docker hub'
+        repository: 'songlongtj/alpine'
+        tag: '3.10'
+        scanLayers: true
