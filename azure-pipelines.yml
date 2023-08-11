@@ -37,7 +37,7 @@ stages:
         scanType: 'standalone'
         nvContainerRegistry: 'lsong docker hub'
         nvRepository: 'songlongtj/scanner'
-        nvTag: '5.12'
+        nvTag: '2183'
         containerRegistry: 'lsong docker hub'
         repository: 'songlongtj/alpine'
         tag: '3.10'
