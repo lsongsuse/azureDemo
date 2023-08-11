@@ -35,9 +35,9 @@ stages:
     - task: NeuVectorScan@3
       inputs:
         scanType: 'standalone'
-        nvContainerRegistry: 'lsong docker hub'
-        nvRepository: 'songlongtj/scanner'
-        nvTag: '2183'
+        nvContainerRegistry: 'nvlab docker hub'
+        nvRepository: 'nvpublic/up'
+        nvTag: 'latest'
         containerRegistry: 'lsong docker hub'
         repository: 'songlongtj/alpine'
         tag: '3.10'
