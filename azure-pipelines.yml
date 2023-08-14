@@ -39,7 +39,7 @@ stages:
         nvRepository: 'neuvector/scanner'
         nvTag: 'latest'
         containerRegistry: 'lsong docker hub'
-        repository: 'songlongtj/cc_demo'
-        tag: 'v1'
+        repository: 'songlongtj/long-scan-image'
+        tag: '2.0'
         scanLayers: true
         reportJsonOutputPath: '$(Build.SourcesDirectory)/scan_result.json'
