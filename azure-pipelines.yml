@@ -36,7 +36,7 @@ stages:
         echo "----pipeline.Workspace"
         echo $(Pipeline.Workspace)
         echo "agent----tempDirectory----"
-        echo $('agent.tempDirectory)
+        echo $(agent.tempDirectory)
     - task: NeuVectorScan@3
       inputs:
         scanType: 'standalone'
