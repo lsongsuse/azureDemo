@@ -45,4 +45,3 @@ stages:
         repository: 'songlongtj/alpine'
         tag: '3.10'
         scanLayers: true
-        reportJsonOutputPath: '$(Build.SourcesDirectory)/scan_result.json'
