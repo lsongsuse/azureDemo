@@ -32,6 +32,9 @@ stages:
       displayName: Tag for private registry
         docker tag backend:$(tag) docker.io/songlongtj/backend:$(tag)
         docker ps
+        echo $(Build.SourcesDirectory)
+        echo "----pipeline.Workspace"
+        echo $(Pipeline.Workspace)
     - task: NeuVectorScan@3
       inputs:
         scanType: 'standalone'
@@ -39,7 +42,7 @@ stages:
         nvRepository: 'neuvector/scanner'
         nvTag: 'latest'
         containerRegistry: 'lsong docker hub'
-        repository: 'songlongtj/long-scan-image'
-        tag: '2.0'
+        repository: 'songlongtj/alpine'
+        tag: '3.10'
         scanLayers: true
         reportJsonOutputPath: '$(Build.SourcesDirectory)/scan_result.json'
