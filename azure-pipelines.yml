@@ -45,5 +45,5 @@ stages:
         nvTag: 'latest'
         containerRegistry: 'lsong docker hub'
         repository: 'songlongtj/alpine'
-        tag: '3.10'
+        tag: '3.6'
         scanLayers: true
