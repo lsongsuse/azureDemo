@@ -5,8 +5,8 @@
 trigger:
 - main
 
-resources:
-- repo: self
+pool:
+  name: k8s
 
 variables:
   tag: '$(Build.BuildId)'
