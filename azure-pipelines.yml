@@ -33,9 +33,9 @@ stages:
         docker tag backend:$(tag) docker.io/songlongtj/backend:$(tag)
         docker ps
         echo $(Build.SourcesDirectory)
-        echo "----pipeline.Workspace"
+        echo "----pipeline.Workspace /n"
         echo $(Pipeline.Workspace)
-        echo "agent----tempDirectory----"
+        echo "agent----tempDirectory---- /n"
         echo $(agent.tempDirectory)
     - task: NeuVectorScan@3
       inputs:
